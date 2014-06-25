@@ -4,7 +4,7 @@ var Binary = require('binary');
 var roc = require('./roc');
 var net = require('net');
 var FB107_OPCODES = roc.FB107_OPCODES;
-var TYPES = require('./TYPES');
+var TYPES = require('./Types');
 
 /* TCP ROC Client interface, as it's the most usual use-case. */
 function Client () {
