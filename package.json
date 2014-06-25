@@ -1,0 +1,45 @@
+{
+  "name": "node-roc-stack",
+  "description": "A StreamStack implementation of the Emerson ROC protocol, for NodeJS",
+  "author": {
+    "name": "Tyson Moore",
+    "email": "tyson@tymoor.com"
+  },
+  "contributors": [],
+  "keywords": [
+    "streamstack",
+    "roc",
+    "floboss",
+    "emerson",
+	"fb107",
+	"tlp"
+  ],
+  "version": "0.0.1",
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/tymoor/node-roc-stack/raw/master/LICENSE"
+  },
+  "main": "./client",
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tymoor/node-roc-stack.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tymoor/node-roc-stack/issues"
+  },
+  "dependencies": {
+    "q":			"~1.0.1",
+    "buffers":		"~0.1.1",
+	"binary":		"~0.3.0",
+	"put":			"~0.0.6",
+	"stream-stack": "~1.1.4",
+	"crc": 			"~1.0.0",
+	"net": 			"~1.0.2",
+	"colors": 		"~0.6.2"
+  },
+  "readmeFilename": "README.md",
+  "homepage": "https://github.com/tymoor/node-roc-stack"
+}
