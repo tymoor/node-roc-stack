@@ -1,4 +1,3 @@
-// IP and port of the MODBUS slave, default port is 502
 var Q = require('q');
 var c = require('./client').createClient(4000, '10.220.10.35');
 var util = require('util');
