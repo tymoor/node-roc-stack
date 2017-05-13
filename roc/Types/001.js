@@ -1,8 +1,8 @@
-var Name = 'Digital Inputs';
+var Name = 'Digital Input';
 
 var PARAMETERS = {
-	0:  {r: true,	w: true,	type: 'AC',		bytes: 10,	description: '10 characters For FB107' }, 
-	1:  {r: true,	w: true,	type: 'UINT8',	bytes: 1,	description: 'Filter number of either 100ms or 15-second increments' },
+	0:  {r: true,	w: true,	type: 'AC',		bytes: 10,	description: 'Point Tag Identification' }, 
+	1:  {r: true,	w: true,	type: 'UINT8',	bytes: 1,	description: 'Filter' },
 	2:  {r: true,	w: true,	type: 'UNIT8',	bytes: 1,	description: 'Status' },
 	3:  {r: true,	w: true,	type: 'BIN',	bytes: 1, 	description: 'Mode',
 		sub: {
@@ -11,14 +11,21 @@ var PARAMETERS = {
 				FilterInterval:	0x04,
 				TDIEnable:		0x08,
 				AlarmEnable:	0x10,
-				RBXClear:		0x20,
+				RBXOnClear:		0x20,
 				RBXOnSet:		0x40,
 				ManualMode:		0x80
 			}
 		},
 	4:	{r: true,	w: false,	type: 'BIN',	bytes: 1,	description: 'Alarm Code',
 		sub: {
-				
+                TDILowAlarm:        0x01,
+                TDILowLowAlarm:     0x02,
+                TDIHighAlarm:       0x04,
+                TDIHighHighAlarm:   0x08,
+                TDIRateAlarm:       0x10,
+                StatusChange:       0x20,
+                PointFail:          0x40,
+                ManualMode:         0x80
 			}
 		},
 	5:	{r: true,	w: true,	type: 'UINT32',	bytes: 4,	description: 'Accumulated Values' },

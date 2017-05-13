@@ -11,8 +11,8 @@
     "roc",
     "floboss",
     "emerson",
-	"fb107",
-	"tlp"
+	  "fb107",
+	  "tlp"
   ],
   "version": "0.0.2",
   "license": {
@@ -31,14 +31,14 @@
     "url": "https://github.com/tymoor/node-roc-stack/issues"
   },
   "dependencies": {
-    "q":			"~1.0.1",
-    "buffers":		"~0.1.1",
-	"binary":		"~0.3.0",
-	"put":			"~0.0.6",
-	"stream-stack": "~1.1.4",
-	"crc": 			"~1.0.0",
-	"net": 			"~1.0.2",
-	"colors": 		"~0.6.2"
+    "q":			      "~1.0.1",
+    "buffers":      "~0.1.1",
+	  "binary":		    "~0.3.0",
+	  "put":			    "~0.0.6",
+	  "stream-stack": "~1.1.4",
+	  "crc": 			    "~1.0.0",
+	  "net": 			    "~1.0.2",
+	  "colors": 		  "~0.6.2"
   },
   "readmeFilename": "README.md",
   "homepage": "https://github.com/tymoor/node-roc-stack"
